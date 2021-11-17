@@ -10,6 +10,10 @@ const Navbar = () => {
 
   useEffect(() => {
     window.onscroll = () => {
+      setToggleMenu(false);
+      document
+        .querySelector(".navbar .navbar__container ul")
+        .classList.remove("active");
       document
         .querySelector(".navbar .navbar__container")
         .classList.toggle("sticky", window.scrollY > 0);
