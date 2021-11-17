@@ -6,7 +6,6 @@ import "./style.scss";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [scrollY, setScrollY] = useState(window.scrollY);
 
   useEffect(() => {
     window.onscroll = () => {
