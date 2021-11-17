@@ -1,0 +1,107 @@
+.plan {
+  .card__container {
+    .card {
+      flex: 1 1 30rem;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 2rem;
+      padding: 2rem 3rem;
+      max-width: 30rem;
+      width: 100%;
+      min-height: 45rem;
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+
+      h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        text-align: center;
+      }
+
+      .icons {
+        text-align: center;
+        color: #ff1e1e;
+        margin: 1rem 0;
+        font-size: 2rem;
+      }
+
+      .price {
+        p {
+          font-size: 3rem !important;
+          font-weight: bold;
+          line-height: 4rem;
+
+          span {
+            font-size: 2.5rem !important;
+          }
+        }
+
+        .quote {
+          font-size: 1.4rem !important;
+          line-height: 2rem !important;
+          text-transform: capitalize !important;
+          text-align: center !important;
+          margin-bottom: 2rem !important;
+          font-weight: normal !important;
+        }
+      }
+
+      .offers {
+        p {
+          text-align: left !important;
+          font-weight: 500 !important;
+          margin: 1rem 0 !important;
+          font-size: 1.6rem !important;
+
+          span {
+            display: inline-block;
+            margin-right: 0.5rem;
+            color: #ff1e1e;
+          }
+        }
+      }
+
+      .btn {
+        font-size: 1.5rem;
+        padding: 1rem 5rem;
+        border: none;
+        border-radius: 5rem;
+        background: #ff1e1e;
+        color: #fff;
+        text-transform: uppercase;
+        display: block;
+        margin: 1rem auto;
+      }
+
+      &:hover {
+        background: #ff1e1e;
+        transform: scale(1.2);
+        color: #fff;
+        z-index: 1000;
+
+        .icons {
+          text-align: center;
+          color: #fff;
+        }
+        .offers {
+          p {
+            text-align: left !important;
+            font-weight: normal !important;
+            margin: 1rem 0 !important;
+            font-size: 1.6rem !important;
+
+            span {
+              color: #fff;
+            }
+          }
+        }
+
+        .btn {
+          border: 1px solid #ccc;
+          background: #ff5c5c;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
